@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1400px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* navbar styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  background: cornflowerblue;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: white;
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+.navbar .nav-link {
+  margin: 15px auto;
+}
+
+/* home section styling */
+.home {
+  display: flex;
+  background: rgb(148, 148, 247);
+  height: 100vh;
+  color: rgb(22, 19, 19);
+  min-height: 700px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .outline-white {
+  margin: 5% auto;
+}
+
+.row {
+  margin: 2%;
+}
+
+.row .writing-1 {
+  margin: 2px auto;
+  padding: auto 2%;
+}
+
+/* home section text styling */
+.home .home-content .text-1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 4% auto;
+}
+
+/* footer section styling */
+.footer {
+  background-color: rgb(55, 98, 190);
+}
+
+.column-1,
+.column-2,
+.column-3 {
+  display: inline-block;
+  box-sizing: border-box;
+  color: white;
+  font-size: small;
+  padding: 2px;
+  margin: 2% 4%;
+  bottom: 0;
+}
+
+.column-3 a {
+  color: white;
+}
+
+.text-in-white {
+  margin-top: 5%;
+}
