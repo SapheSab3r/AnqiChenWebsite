@@ -106,13 +106,6 @@
   margin: 15px auto;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 /* footer section styling */
 .footer {
   background-color: rgb(55, 98, 190);
@@ -136,4 +129,55 @@
 
 .text-in-white {
   margin-top: 5%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+/* mobile view */
+@media screen and (max-width: 1024px) {
+  .nav-link {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 10vh;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-link li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
 }
