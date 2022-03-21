@@ -2,7 +2,7 @@
 window.onscroll = function() {navFunction()};
 
 // Get the navbar
-var navbar = document.getElementsByClassName("menu");
+var navbar = document.getElementsByClassName("navbar");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -11,7 +11,6 @@ var sticky = navbar.offsetTop;
 function navFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
-    .navbar.css("background", "blue");
   } else {
     navbar.classList.remove("sticky");
   }
