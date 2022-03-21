@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-.home .home-content .learn-more {
+.button {
   margin: 5% auto;
   padding: 4%;
   color: aliceblue;
@@ -43,6 +43,12 @@
 .row .writing-1 {
   margin: 2px auto;
   padding: auto 2%;
+}
+
+/* button style */
+.button:hover {
+  color: white;
+  background-color: none;
 }
 
 /* home section text styling */
