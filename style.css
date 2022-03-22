@@ -25,7 +25,9 @@
   align-items: center;
 }
 
+/* button style */
 .button {
+  display: inline-block;
   margin: 5% auto;
   padding: 4%;
   color: aliceblue;
@@ -36,19 +38,8 @@
   border-radius: 5%;
 }
 
-.row {
-  margin: 2%;
-}
-
-.row .writing-1 {
-  margin: 2px auto;
-  padding: auto 2%;
-}
-
-/* button style */
 .button:hover {
-  color: white;
-  background-color: none;
+  background-color: black;
 }
 
 /* home section text styling */
@@ -110,6 +101,30 @@
 
 .navbar .nav-link {
   margin: 15px auto;
+}
+
+/* about me section styling */
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .image {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  background-color: brown;
+}
+
+.about .about-content .column-left {
+  width: 45%;
+}
+
+.about .about-content .column-right {
+  width: 45%;
 }
 
 /* footer section styling */
