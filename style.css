@@ -29,13 +29,15 @@
 .button {
   display: inline-block;
   margin: 5% auto;
-  padding: 4%;
   color: aliceblue;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
   background-color: rgba(77, 72, 72, 0.65);
-  border: outset rgba(175, 165, 165, 0.555);
-  border-radius: 5%;
+  border: 2px outset rgba(175, 165, 165, 0.555);
+  transition: all 0.3s ease;
 }
 
 .button:hover {
@@ -153,7 +155,7 @@
 
 .about .about-content .column-right .text {
   padding-left: 4%;
-  font-size: 30px;
+  font-size: 22px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -176,6 +178,26 @@
   padding-left: 5%;
 }
 
+.about .about-content .column-right {
+  text-align: justify;
+}
+
+.about .about-content .column-right a {
+  display: inline-block;
+  background-color: rgb(163, 51, 51);
+  color: white;
+  font-size: 22px;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid rgb(163, 51, 51);
+  transition: all 0.3s ease;
+}
+.about .about-content .column-right a:hover {
+  color: rgb(163, 51, 51);
+  background-color: white;
+}
+
 /* my work section */
 .my-work .title-2 {
   text-align: center;
@@ -186,9 +208,43 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+.my-work .title-2::before {
+  content: "";
+  position: absolute;
+  top: 207.4%;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.my-work .title-2::after {
+  content: "my goal";
+  position: absolute;
+  top: 205%;
+  font-size: 20px;
+  left: 50%;
+  color: rgb(163, 51, 51);
+  padding: 5px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+.my-work .my-work-content .column-right-2 .text-2 {
+  padding-left: 4%;
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.my-work .my-work-content .column-right-2 {
+  width: 50%;
+  padding-right: 4%;
+}
+
 /* footer section styling */
 .footer {
-  background-color: rgb(55, 98, 190);
+  background-color: rgb(163, 51, 51);
 }
 
 .column-1,
