@@ -177,7 +177,6 @@
   left: 50%;
   color: rgb(163, 51, 51);
   padding: 5px;
-  background: white;
   transform: translateX(-50%);
 }
 
@@ -351,6 +350,14 @@ footer span a:hover {
   height: 3px;
   background-color: white;
   margin: 5px;
+}
+
+/* sticky navbar */
+.sticky {
+  position: fixed;
+  background-color: rgba(17, 17, 17, 0.363);
+  top: 0;
+  width: 100%;
 }
 
 /* mobile view */
