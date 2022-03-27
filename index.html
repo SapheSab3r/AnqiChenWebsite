@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anqi's Personal Website</title>
-
+<!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/7143e64164.js" crossorigin="anonymous"></script>
+<!-- css file link -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <!--nav bar-->
-
 <!--Home Section Start-->
 <section class = "home" id = "home">
     <div class = "navbar">
            <div class = "logo"><a href="#">Portfo<span>lio.</a></div>
-    
+<!--nav bar-->
            <ul class="menu">
                <li><a class = "nav-link" href="#home">Home</a></li>
                <li><a class = "nav-link" href="#about">About Me</a></li>
@@ -141,6 +141,33 @@
 
 </section>
 
+<!-- contact section start -->
+<section class = "contact" id ="contact">
+    <div class = "max-width">
+        <h1 class = "title">Contact</h1>
+        <div class = "contact-content">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">
+                  
+                </div>
+
+                <div class = "container">
+                    <form>
+                        <h3> Get In Touch</h3>
+                        <input type = "text" id = "name" placeholder = "Your Name" required>
+                        <input type = "email" id = "email" placeholder = "Email ID" required>
+                        <input type = "text" id = "phone" placeholder = "Phone number" required>
+                        <textarea id = "message" rows = "10" placeholder = "Have a question or a project in mind?"></textarea>
+                        <button type = "submit">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 <section class = "summary">
     <!-- Info Section Start -->
     
@@ -182,7 +209,38 @@
     </div>
 </section>
 
+
+
 <footer>
+    <a href = "#" class = "to-top">
+        <i class = "fa-solid fa-arrow-up"></i>
+    </a>
+
+    <div class = "icon-wrap">
+        <a href = "https://www.instagram.com/emb3r_12/">
+            <div class = "flex icon" id = "icon-1">
+                <i class="fa-brands fa-instagram-square fa-3x"></i>
+            </div>
+        </a>
+
+        <a href = "https://www.linkedin.com/in/anqi-chen-136b7b1b2/">
+            <div class = "flex icon" id = "icon-2">
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+            </div>
+            </a>
+
+        <a href = "https://github.com/SapheSab3r">
+            <div class = "flex icon" id = "icon-3">
+                <i class="fa-brands fa-github-square fa-3x"></i>
+            </div>
+        </a>           
+            
+    </div>
+        
+
+        
+    </div>
+
     <span>Created By <a href = "#"> Anqi Chen</a> | &copy; 2022 All Rights Reserved.</span>
 </footer>
 

@@ -112,13 +112,15 @@
 
 .about,
 .work,
-.skills {
+.skills,
+.contact {
   font-family: "Ubuntu", sans-serif;
 }
 
 .about .title,
 .work .title,
-.skills .title {
+.skills .title,
+.contact .title {
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -131,7 +133,8 @@
 
 .about .about-content,
 .work .work-content,
-.skills .skill-content {
+.skills .skill-content,
+.contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -140,21 +143,24 @@
 }
 
 .about .about-content .right .text,
-.work .work-content .right .text {
+.work .work-content .right .text,
+.contact .contact-content .right .text {
   padding-left: 4%;
   font-size: 22px;
 }
 
 .about .about-content .right,
 .work .work-content .right,
-.skills .skill-content .right {
+.skills .skill-content .right,
+.contact .contact-content .right {
   width: 50%;
   padding-right: 4%;
 }
 
 .about .about-content .right,
 .work .work-content .right,
-.skills .skill-contents {
+.skills .skill-contents,
+.contact .contact-content {
   text-align: justify;
 }
 
@@ -181,7 +187,8 @@
 }
 
 .about .about-content .left,
-.work .work-content .left {
+.work .work-content .left,
+.contact .contact-content .left {
   width: 50%;
   padding-right: 4%;
   align-items: center;
@@ -284,13 +291,69 @@
   background: rgb(163, 51, 51);
 }
 
+/* contact contect styling */
+.contact .title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 150px;
+  bottom: 0%;
+  font-size: 20px;
+  left: 50%;
+  background-color: rgb(163, 51, 51);
+  transform: translateX(-50%);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: rgb(163, 51, 51);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: white;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 5%;
+}
+
+form h3 {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  border: 2;
+  margin: 10px 0;
+  outline: none;
+  font-size: 18px;
+}
+
+form button {
+  padding: 20px;
+  background: rgb(153, 147, 147);
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  width: 160px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
 /* footer section styling */
 .summary {
   display: flex;
   align-content: center;
   justify-content: space-around;
   background-color: rgb(163, 51, 51);
-  padding: 20px;
 }
 
 .summary .max-width {
@@ -323,7 +386,74 @@
 footer {
   background: rgb(163, 51, 51);
   color: white;
+  position: relative;
   padding: 20px 23px;
+}
+
+footer .icon-wrap .icon {
+  color: white;
+  background: none;
+  display: inline-block;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+footer .icon-wrap .fa-brands {
+  text-align: center;
+}
+
+footer .icon-wrap .icon:hover {
+  background: none;
+  box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+  transform: scale(0.9);
+}
+
+footer .icon-wrap .icon:hover .fa-brands {
+  color: white;
+}
+
+footer .icon-wrap .icon:hover .fa-brands {
+  animation: to-bottom-from-top 0.5s forwards;
+}
+
+@keyframes to-bottom-from-top {
+  40% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  52% {
+    opacity: 1;
+  }
+}
+
+footer .to-top {
+  color: white;
+  background: rgb(15, 14, 14);
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  line-height: 40pt;
+  top: -25px;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.to-top.active {
+  bottom: 32px;
+  opacity: 1;
 }
 
 footer span {
