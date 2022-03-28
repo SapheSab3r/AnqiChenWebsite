@@ -40,14 +40,19 @@ window.addEventListener("scroll", () =>{
 
 // filter object
 $(document).ready(function(){
-    const object = $(this).attr("data-filter");
-    if (object == "all"){
-        $(".box").show("1000");
-    }
-    else{
-        $(".box").not("." + object).hide("1000");
-        $(".box").filter("." + object).show("1000");
-    }
+    $(".filter").click(function(){
+        const object = $(this).attr("data-filter");
+
+        if (object == "all"){
+            $(".box").show("1000");
+        }
+
+        else{
+            $(".box").not("."+object).hide("1000");
+            $(".box").filter("."+object).show("1000");
+        }
+    })
+   
     // add active class for selected items
     $(".filter").click(function(){
         $(this).addClass("active").siblings().removeClass("active");
