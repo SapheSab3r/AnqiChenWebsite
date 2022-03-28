@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Raleway-bold", sans-serif;
 }
 
 /* home section styling */
@@ -13,7 +14,6 @@
   background-repeat: no-repeat;
   color: rgb(252, 252, 252);
   min-height: 720px;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .home .info {
@@ -30,7 +30,6 @@
   display: inline-block;
   margin: 5% auto;
   color: aliceblue;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   padding: 10px 30px;
   margin-top: 20px;
@@ -67,6 +66,7 @@
   height: 10%;
   min-height: 10vh;
   background: transparent;
+  z-index: 99;
 }
 
 .navbar .logo a {
@@ -74,11 +74,10 @@
   font-size: 35px;
   font-weight: 600;
   padding: 10%;
-  font-family: "Ubuntu", "sans-serif";
 }
 
 .navbar .logo a span {
-  color: rgb(163, 51, 51);
+  color: #7d0f21;
 }
 
 .navbar .menu li {
@@ -112,27 +111,23 @@
 
 .about,
 .work,
-.skills,
-.contact {
-  font-family: "Ubuntu", sans-serif;
+.skills {
+  margin-bottom: 10%;
 }
 
 .about .title,
 .work .title,
-.skills .title,
-.contact .title {
+.skills .title {
   position: relative;
   text-align: center;
   font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 2%;
+  font-weight: 550;
+  margin-bottom: 4%;
   margin-top: 2%;
   padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
 }
 
 .about .about-content,
-.work .work-content,
 .skills .skill-content,
 .contact .contact-content {
   display: flex;
@@ -143,14 +138,13 @@
 }
 
 .about .about-content .right .text,
-.work .work-content .right .text,
+.work .work-content,
 .contact .contact-content .right .text {
   padding-left: 4%;
   font-size: 22px;
 }
 
 .about .about-content .right,
-.work .work-content .right,
 .skills .skill-content .right,
 .contact .contact-content .right {
   width: 50%;
@@ -158,7 +152,6 @@
 }
 
 .about .about-content .right,
-.work .work-content .right,
 .skills .skill-contents,
 .contact .contact-content {
   text-align: justify;
@@ -181,7 +174,7 @@
   bottom: -18%;
   font-size: 20px;
   left: 50%;
-  color: rgb(163, 51, 51);
+  color: #7d0f21;
   padding: 5px;
   transform: translateX(-50%);
 }
@@ -196,20 +189,20 @@
 
 .about .about-content .left .icon {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   padding-left: 5%;
 }
 
 .about .about-content .right a {
   display: inline-block;
-  background-color: rgb(163, 51, 51);
+  background-color: #7d0f21;
   color: white;
   font-size: 22px;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid rgb(163, 51, 51);
+  border: 2px solid #7d0f21;
   transition: all 0.3s ease;
 }
 
@@ -219,18 +212,64 @@
 }
 
 /* my work section */
+.work {
+  background: rgb(212, 212, 212, 0.2);
+}
+
 .work .title::after {
-  content: "——my goal——";
+  content: "——what i've worked on——";
   position: absolute;
   bottom: -18%;
   font-size: 20px;
   left: 50%;
-  color: rgb(163, 51, 51);
+  color: #7d0f21;
   padding: 5px;
   transform: translateX(-50%);
 }
 
+.work .column.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .filter-wrap .filter {
+  box-sizing: border-box;
+  background: #eee;
+  margin: 5px;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.work .filter-wrap {
+  padding: 8px 20px;
+}
+
+.work .box {
+  float: left;
+  background: rgb(119, 115, 115);
+  line-height: 120px;
+  width: 120px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+.work .filter-wrap .filter.active {
+  background: rgb(163, 51, 51);
+  color: #eee;
+}
+
 /* skills section styling */
+.skills {
+  margin-bottom: 25%;
+}
+
 .skills .title::after {
   content: "——what i know——";
   position: absolute;
@@ -292,29 +331,41 @@
 }
 
 /* contact contect styling */
+.contact {
+  background: rgb(163, 51, 51);
+}
+
+.contact .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  transform: translateY(55px);
+}
+
 .contact .title::after {
   content: "";
   position: absolute;
   height: 4px;
-  width: 150px;
-  bottom: 0%;
+  width: 180px;
+  bottom: 2%;
   font-size: 20px;
   left: 50%;
-  background-color: rgb(163, 51, 51);
+  background-color: white;
   transform: translateX(-50%);
 }
 
 .container {
   width: 100%;
   height: 100vh;
-  background: rgb(163, 51, 51);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 
 form {
-  background: white;
+  background: none;
   margin: 5%;
   display: flex;
   flex-direction: column;
@@ -325,31 +376,39 @@ form {
 }
 
 form h3 {
+  color: rgb(230, 211, 211);
+  text-shadow: 2px 0px 0px rgba(206, 89, 55, 0.61);
   font-weight: 800;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 form input,
 form textarea {
-  border: 2;
-  margin: 10px 0;
+  background: #970f26;
+  border: 0;
+  margin: 2px 0;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-form button {
-  padding: 20px;
-  background: rgb(153, 147, 147);
-  outline: none;
-  border: 0;
+form .send {
+  padding: 15px 0;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 13pt;
+  margin: 0 auto;
+  padding: 7px 0;
+  width: 170px;
   cursor: pointer;
+  text-align: center;
   width: 160px;
   margin: 20px auto 0;
-  border-radius: 30px;
 }
 
 /* footer section styling */
-.summary {
+/* .summary {
   display: flex;
   align-content: center;
   justify-content: space-around;
@@ -380,11 +439,11 @@ form button {
 .summary .max-width .text a {
   font-size: 16px;
   color: white;
-}
+} */
 
 /* footer styling */
 footer {
-  background: rgb(163, 51, 51);
+  background: #810e21;
   color: white;
   position: relative;
   padding: 20px 23px;
@@ -400,8 +459,14 @@ footer .icon-wrap .icon {
   transition: transform 0.5s;
 }
 
-footer .icon-wrap .fa-brands {
+footer .icon-wrap {
   text-align: center;
+  margin: 5%;
+}
+
+footer .icon-wrap .icon {
+  text-align: center;
+  margin: 4%;
 }
 
 footer .icon-wrap .icon:hover {
@@ -433,22 +498,27 @@ footer .icon-wrap .icon:hover .fa-brands {
 
 footer .to-top {
   color: white;
-  background: rgb(15, 14, 14);
+  background: #3d2d30;
   cursor: pointer;
   position: absolute;
-  left: 50%;
   line-height: 40pt;
   top: -25px;
-  margin: 0 auto;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  border-radius: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 47%;
   opacity: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
+}
+
+footer .to-top:hover {
+  background: rgba(22, 21, 21, 0.445);
+  box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+  transform: scale(0.9);
 }
 
 .to-top.active {

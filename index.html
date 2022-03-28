@@ -19,8 +19,8 @@
            <ul class="menu">
                <li><a class = "nav-link" href="#home">Home</a></li>
                <li><a class = "nav-link" href="#about">About Me</a></li>
+               <li><a class = "nav-link" href="#work">Project</a></li>
                <li><a class = "nav-link" href="#skills">Skills</a></li>
-               <li><a class = "nav-link" href="#portfolio">Portfolio</a></li>
                <li><a class = "nav-link" href="#contact">Contact</a></li>
                <li><a class = "nav-link" href="#">中文</a></li>
            </ul>
@@ -47,7 +47,7 @@
 <!-- About Section Start -->
 <section class = "about" id = "about">
     <div class = "max-width">
-        <h1 class = "title">About Me</h1>
+        <h1 class = "title">ABOUT</h1>
         <div class = "about-content">
             <div class = "column left">
                 <img src ="https://img.freepik.com/free-vector/cute-girl-gaming-holding-joystick-cartoon-icon-illustration-people-
@@ -74,26 +74,30 @@
 
 <!--My Works Section Start -->
 <section class ="work" id ="work">
-    <h1 class = "title">My Work</h1>
+    <h1 class = "title">PROJECT</h1>
     <div class = "work-content">
-        <div class = "column left">
-
-
-        </div>
-
-        <div class ="column right">
-            <div class = "text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ad laudantium est ut dolore?
-                Rerum beatae et esse, ullam ea accusamus consequatur praesentium repudiandae quod vel facere voluptatum animi saepe?
+        <div class ="filter-wrap" data-animation="fade-in">
+            <div class = "flex row">
+                <div class = "filter active" data-filter = "all">ALL</div>
+                <div class = "filter" data-filter = "python">PYTHON</div>
+                <div class = "filter" data-filter = "arch">ARCHITECTURE</div>
+                <div class = "filter" data-filter = "resume">RESUME</div>
             </div>
-        </div>
+            <div class = "float-bar">
+                <div class = "flex row">
+                <div class = "box" data-filter = "all">ALL</div>
+                <div class = "box" data-filter = "python">PYTHON</div>
+                <div class = "box" data-filter = "arch">ARCHITECTURE</div>
+                <div class = "box" data-filter = "resume">RESUME</div>
+                </div>
+            </div>  
     </div>
 </section>
 
 <!-- Skill section start -->
 <section class ="skills" id ="skills">
     <div class = "max-width">
-        <h1 class = "title">My Skills</h1>
+        <h1 class = "title">SKILLS</h1>
         <div class = "skill-content">
             <div class = "column left">
                 <div class ="text">My Creative Skills</div>
@@ -143,8 +147,20 @@
 
 <!-- contact section start -->
 <section class = "contact" id ="contact">
+    <svg
+    preserveAspectRatio = "none"
+    viewBox = "0 0 100 100"
+    height = "70"
+    width = "100%"
+    version = "1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    class="svgcolor-light"
+  >
+    <path d="M0 0 L50 100 L100 0 Z" fill = "white" stroke="white"></path>
+  </svg>
+
     <div class = "max-width">
-        <h1 class = "title">Contact</h1>
+        <h1 class = "title">CONTACT</h1>
         <div class = "contact-content">
             <div class="container flex">
                 <div class="header waypoint" data-animation="slide-in-left">
@@ -153,12 +169,12 @@
 
                 <div class = "container">
                     <form>
-                        <h3> Get In Touch</h3>
+                        <h3> Have a question or a project in mind?</h3>
                         <input type = "text" id = "name" placeholder = "Your Name" required>
                         <input type = "email" id = "email" placeholder = "Email ID" required>
                         <input type = "text" id = "phone" placeholder = "Phone number" required>
-                        <textarea id = "message" rows = "10" placeholder = "Have a question or a project in mind?"></textarea>
-                        <button type = "submit">Send</button>
+                        <textarea id = "message" rows = "10" placeholder = "Message"></textarea>
+                        <button type = "submit" class = "send">Send</button>
 
                     </form>
                 </div>
@@ -166,12 +182,12 @@
         </div>
     </div>
 
-</section>
+<!-- </section>
 
 <section class = "summary">
-    <!-- Info Section Start -->
+    Info Section Start -->
     
-    <div class = "info 1">
+    <!-- <div class = "info 1">
         <div class = "max-width">
             <h4 class = "title">Mailing Address</h4>
             <p class = "text">Carnegie Mellon University<br><br>
@@ -181,9 +197,9 @@
             </p>
         </div>
         
-    </div>
+    </div> -->
 
-    <div class = "info 2">
+    <!-- <div class = "info 2">
         <div class = "max-width">
             <h4 class = "title">Contact</h4>
             <p class = "text">Anqi Chen 陈安琪 <br><br>
@@ -207,53 +223,43 @@
         </div>
         
     </div>
-</section>
+</section> -->
 
 
 
 <footer>
     <a href = "#" class = "to-top">
-        <i class = "fa-solid fa-arrow-up"></i>
+        <i class = "fa-solid fa-arrow-up fa-2x"></i>
     </a>
 
     <div class = "icon-wrap">
         <a href = "https://www.instagram.com/emb3r_12/">
             <div class = "flex icon" id = "icon-1">
-                <i class="fa-brands fa-instagram-square fa-3x"></i>
+                <i class="fa-brands fa-instagram-square fa-4x"></i>
             </div>
         </a>
 
         <a href = "https://www.linkedin.com/in/anqi-chen-136b7b1b2/">
             <div class = "flex icon" id = "icon-2">
-                <i class="fa-brands fa-linkedin fa-3x"></i>
+                <i class="fa-brands fa-linkedin fa-4x"></i>
             </div>
             </a>
 
         <a href = "https://github.com/SapheSab3r">
             <div class = "flex icon" id = "icon-3">
-                <i class="fa-brands fa-github-square fa-3x"></i>
+                <i class="fa-brands fa-github-square fa-4x"></i>
             </div>
         </a>           
             
     </div>
         
 
-        
-    </div>
-
     <span>Created By <a href = "#"> Anqi Chen</a> | &copy; 2022 All Rights Reserved.</span>
 </footer>
-
-
 </body>
 
-    
 
-
-
-
-
-
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
 </html>
