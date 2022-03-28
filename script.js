@@ -48,8 +48,8 @@ $(document).ready(function(){
         }
 
         else{
-            $(".box").not("."+object).hide("1000");
-            $(".box").filter("."+object).show("1000");
+            $(".box").not("." + object).hide("1000");
+            $(".box").filter("." + object).show("1000");
         }
     })
    
@@ -59,3 +59,18 @@ $(document).ready(function(){
     })
 })
 
+
+// send Email
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "username",
+        Password : "password",
+        To : 'aac2@andrew.cmu.edu',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
