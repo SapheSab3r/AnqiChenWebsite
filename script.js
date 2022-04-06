@@ -60,17 +60,24 @@ $(document).ready(function(){
 })
 
 
-// send Email
+// send Email Info
 function sendEmail(){
+
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "username",
-        Password : "password",
+        Username : "",
+        Password : "",
         To : 'aac2@andrew.cmu.edu',
         From : document.getElementById("email").value,
-        Subject : "New Contact Form",
-        Body : "And this is the body"
+        Subject : document.querySelector("#name").value + " just sent you a message",
+        Body : "Name:" + document.querySelector("#name").value + "<br> Email:"
+        + document.querySelector("#email").value + "<br> Phone:"
+        + document.querySelector("#phone").value + "<br> Message:"
+        + document.querySelector("#message").value
+
     }).then(
-      message => alert(message)
-    );
+      message => alert("mail sent successfully!"));
+
 }
+
+
