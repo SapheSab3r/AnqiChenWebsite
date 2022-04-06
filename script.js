@@ -65,8 +65,8 @@ function sendEmail(){
 
     Email.send({
         Host : "smtp.gmail.com",
-        Username : "",
-        Password : "",
+        Username : "aac2@andrew.cmu.edu",
+        Password : "An1214aot@chgo",
         To : 'aac2@andrew.cmu.edu',
         From : document.getElementById("email").value,
         Subject : document.querySelector("#name").value + " just sent you a message",
@@ -77,6 +77,8 @@ function sendEmail(){
 
     }).then(
       message => alert("mail sent successfully!"));
+
+    console.log(document.querySelector("#message").value)
 
 }
 
