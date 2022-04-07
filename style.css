@@ -257,7 +257,7 @@
 
 .work .product .box {
   padding: 20px;
-  background: url(../);
+  background: rgb(123, 106, 106);
   width: 300px;
   height: 300px;
   box-sizing: border-box;
@@ -336,6 +336,11 @@
   background: rgb(163, 51, 51);
 }
 
+
+/* Card styling */
+section:nth-of-type(3) .work-content #gallery .mix .card{
+  background: url(https://static.wikia.nocookie.net/plantsvszombies/images/3/35/Plantsvs.Zombies.png/revision/latest/scale-to-width-down/1200?cb=20171230000816) center;
+}
 /* contact contect styling */
 .contact {
   color: #eee;
