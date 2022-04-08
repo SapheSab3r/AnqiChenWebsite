@@ -294,7 +294,7 @@ html{
 
 .work .filter-wrap .product .card .text span{
   font-weight: 100;
-  font-size: 14px;
+  font-size: 15px;
   overflow: scroll;
   color: #7d0f21;
 }
@@ -309,6 +309,7 @@ html{
 
 .work .filter-wrap .product .card .text{
   position: absolute;
+  word-wrap: break-word;
   inset: 25px;
   border: none;
   padding: 0 17px;
