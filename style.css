@@ -390,10 +390,11 @@ html{
 .popup-box .popup-content{
   background-color: #ffffff;
 	width: 600px;
+  height: 500px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-190%);
+	transform: translate(50%,-190%);
 	border-radius: 8px;
 }
 
@@ -730,8 +731,19 @@ footer span a:hover {
   .burger {
     display: block;
   }
+
+  .work .product {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    overflow: hidden;
+  
+  }
 }
 
 .nav-active {
   transform: translateX(0%);
 }
+
