@@ -390,8 +390,8 @@ html{
 
 .popup-box .popup-content{
   background-color: #ffffff;
-	width: 600px;
-  height: 500px;
+	width: 700px;
+  height: 600px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -412,7 +412,7 @@ html{
 
 .popup-box .popup-end{
 	padding: 15px;
-	border-top:1px solid #dddddd;
+	border-top: 1px solid #dddddd;
 	text-align: right;
 }
 
@@ -423,7 +423,7 @@ html{
 	font-size: 16px;
 	background-color: transparent;
 	cursor: pointer;
-	border-radius: 4px;
+	border-radius: 1px;
 }
 
 .popup-box.open{
