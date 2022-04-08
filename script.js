@@ -83,3 +83,18 @@ function sendEmail(){
 }
 
 
+//popup content
+const product = document.querySelector(".product");
+const popup = document.querySelector(".popup-box");
+const popupCloseBtn = popup.querySelector(".popup-close-btn");
+
+product.addEventListener("click",function(event){
+    if(event.target.tagName.toLowerCase() == "button"){
+        popupBox();
+
+    }
+})
+
+function popupBox(){
+    popup.classList.toggle("open");
+}

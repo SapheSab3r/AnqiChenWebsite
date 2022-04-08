@@ -305,6 +305,7 @@ html{
 .work .filter-wrap .product .card .learn-more{
   font-size: 18px;
   text-align: center;
+  background-color: transparent;
   margin-top: 5%;
   padding: 4%;
   border: 2px solid #7d0f21;
@@ -318,7 +319,6 @@ html{
   padding: 0 17px;
   margin: 4%;
 }
-
 
 /* Card hover mode */
 .work .filter-wrap .product .card .text::before{
@@ -369,6 +369,65 @@ html{
   cursor: pointer;
 }
 
+
+/* read more content */
+.work .filter-wrap .product .card .read-more-cont{
+  display: none;
+}
+
+.popup-box{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.popup-box .popup-content{
+  background-color: #ffffff;
+	width: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-190%);
+	border-radius: 8px;
+}
+
+.popup-box .popup-header{
+	padding: 15px 40px 15px 15px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.popup-box .popup-body{
+	padding: 15px;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.popup-box .popup-end{
+	padding: 15px;
+	border-top:1px solid #dddddd;
+	text-align: right;
+}
+
+.popup-box .popup-end .popup-close-btn{
+	padding: 8px 15px;
+	border:1px solid #555555;
+	color:#555555;
+	font-size: 16px;
+	background-color: transparent;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.popup-box.open{
+  visibility: visible;
+  opacity: 1;
+}
 
 /* skills section styling */
 .skills {
