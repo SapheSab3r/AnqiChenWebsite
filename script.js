@@ -92,6 +92,7 @@ const popupCloseIcon = popup.querySelector(".popup-close-icon");
 product.addEventListener("click",function(event){
     if(event.target.tagName.toLowerCase() == "button"){
         const item = event.target.parentElement;
+        console.log(item);
         const h2 = item.querySelector("h2").innerHTML;
         const readMoreCont = item.querySelector(".read-more-cont").innerHTML;
         popup.querySelector("h2").innerHTML = h2;

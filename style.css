@@ -33,7 +33,7 @@ html{
 
 .home .small-text{
   font-size: 20px;
-  color:#fedab8;
+  color:#E91E63;
 }
 
 /* button style */
@@ -66,7 +66,7 @@ html{
   font-weight: 500;
   text-transform: capitalize;
   margin: 4% auto;
-  color: #fedab8;
+  color: #ffe6ef;
 }
 
 .home .home-content .text-2::before{
@@ -98,7 +98,7 @@ html{
 }
 
 .navbar .logo a span {
-  color: #f8943f;
+  color: #E91E63;
 }
 
 .navbar .menu li {
@@ -126,9 +126,9 @@ html{
 }
 
 .navbar .resume-button {
-  color: #f8943f;
+  color: #E91E63;
   background-color: transparent;
-  border: 1px solid #f8943f;
+  border: 1px solid #E91E63;
   border-radius: 4px;
   padding: 0.75rem 1rem;
   line-height: 1;
@@ -140,7 +140,7 @@ html{
 
 .navbar .resume-button:hover {
   color: #ffffff;
-  background-color:rgb(242, 101, 37, 0.3);  
+  background-color:rgb(233, 30, 99, 0.3);  
 }
 
 /* about me section styling */
@@ -212,7 +212,7 @@ html{
   bottom: -18%;
   font-size: 20px;
   left: 50%;
-  color: #f8943f;
+  color: #E91E63;
   padding: 5px;
   transform: translateX(-50%);
 }
@@ -236,13 +236,13 @@ html{
 
 .about .about-content .right a {
   display: inline-block;
-  background-color: #f8943f;
+  background-color: #E91E63;
   color: white;
   font-size: 20px;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #f8943f;
+  border: 2px solid #E91E63;
   transition: all 0.3s ease;
 }
 
@@ -251,7 +251,7 @@ html{
 }
 
 .about .about-content .right a:hover {
-  color: #f8943f;
+  color: #E91E63;
   background-color: white;
 }
 
@@ -268,7 +268,7 @@ html{
   bottom: -18%;
   font-size: 20px;
   left: 50%;
-  color: #f8943f;
+  color: #E91E63;
   padding: 5px;
   transform: translateX(-50%);
 }
@@ -286,7 +286,7 @@ html{
 
 .work .filter-wrap .filter {
   box-sizing: border-box;
-  background: #da6d46;
+  background: #E91E63;
   margin: 5px;
   letter-spacing: 1px;
   padding: 8px 10px;
@@ -299,7 +299,7 @@ html{
 }
 
 .work .filter-wrap .filter.active {
-  background: #f8943f;
+  background: #6d1835;
   color: #eee;
 }
 
@@ -340,7 +340,7 @@ html{
   font-weight: 100;
   font-size: 15px;
   overflow: scroll;
-  color: #f8943f;
+  color: #E91E63;
 }
 
 .work .filter-wrap .product .card .learn-more{
@@ -350,7 +350,7 @@ html{
   background-color: transparent;
   margin-top: 5%;
   padding: 4%;
-  border: 2px solid #f8943f;
+  border: 2px solid #E91E63;
 }
 
 .work .filter-wrap .product .card .text{
@@ -408,7 +408,7 @@ html{
 .work .filter-wrap .product .card .text .learn-more:hover{
   color: #eee;
   font-weight: 600;
-  background-color: #f8943f;
+  background-color: #E91E63;
   cursor: pointer;
   transition-delay: 0s;
 }
@@ -446,6 +446,12 @@ html{
 .popup-box .popup-header{
 	padding: 15px 40px 15px 15px;
 	border-bottom: 1px solid #dddddd;
+}
+
+.popup-box .popup-header h2{
+	margin:0;
+	color:#E91E63;
+	font-size: 20px;
 }
 
 .popup-box .popup-header .popup-close-icon{
@@ -509,7 +515,7 @@ html{
   bottom: -18%;
   font-size: 20px;
   left: 50%;
-  color: #f8943f;
+  color: #E91E63;
   padding: 5px;
   transform: translateX(-50%);
 }
@@ -616,8 +622,8 @@ form {
 }
 
 form h3 {
-  color: rgb(230, 211, 211);
-  text-shadow: 2px 0px 0px rgba(206, 89, 55, 0.61);
+  color: rgb(251, 243, 243);
+  text-shadow: 2px 0px 0px rgba(217, 55, 117, 0.61);
   font-weight: 800;
   text-align: center;
   margin-bottom: 20px;
