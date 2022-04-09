@@ -6,6 +6,16 @@
   font-family: "Calibre","Inter","San Francisco","SF Pro Text";
 }
 
+.fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+
 html{
   scroll-behavior: smooth;
   background-color: #27213c;
@@ -440,7 +450,7 @@ html{
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	border-radius: 8px;
+	border-radius: 2px;
 }
 
 .popup-box .popup-header{
@@ -666,6 +676,7 @@ footer {
   color: white;
   position: relative;
   padding: 20px 23px;
+  -webkit-font-smoothing: antialiased;
 }
 
 footer .to-top {
@@ -827,3 +838,7 @@ footer span a:hover {
   transform: translateX(0%);
 }
 
+:root{
+  --fz-md: 18px;
+  --ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+}
