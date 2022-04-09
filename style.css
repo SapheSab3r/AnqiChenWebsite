@@ -159,7 +159,6 @@ html{
 }
 
 .about,
-.work,
 .skills {
   margin-bottom: 5%;
 }
@@ -479,7 +478,7 @@ html{
 
 .popup-box .popup-body{
 	padding: 15px;
-	max-height: 300px;
+	max-height: 90%;
 	overflow-y: auto;
 }
 
@@ -501,8 +500,8 @@ html{
 
 .popup-box .popup-end{
 	padding: 15px;
-	border-top:1px solid #dddddd;
-	text-align: right;
+	border-top: 1px solid #dddddd;
+	text-align: center;
 }
 
 .popup-box .popup-end .btn:focus{
@@ -513,6 +512,8 @@ html{
   visibility: visible;
   opacity: 1;
 }
+
+
 
 /* skills section styling */
 .skills {
@@ -532,13 +533,14 @@ html{
 
 .skills .left{
   display: flex;
-  width: 100%;
-  justify-content: center;
+  justify-content:space-between;
   transform: translate(12%);
 }
 
-.skills .column.right{
-  transform: translate(30%);
+.skills .right{
+  display: flex;
+  justify-content:space-between;
+  transform: translate(28%);
 }
 
 
