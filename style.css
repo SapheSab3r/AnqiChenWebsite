@@ -114,7 +114,7 @@ html{
   transition: font-size 0.8s ease;
 }
 
-.navbar .menu li a:hover {
+.navbar .menu .nav-link:hover {
   color: rgb(18, 28, 87);
   font-size: 25px;
   -webkit-text-stroke-width: 0.5px;
@@ -123,6 +123,24 @@ html{
 
 .navbar .nav-link {
   margin: 15px auto;
+}
+
+.navbar .resume-button {
+  color: #f8943f;
+  background-color: transparent;
+  border: 1px solid #f8943f;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  margin-left: 15px;
+}
+
+.navbar .resume-button:hover {
+  color: #ffffff;
+  background-color:rgb(242, 101, 37, 0.3);  
 }
 
 /* about me section styling */
@@ -430,16 +448,29 @@ html{
 	border-bottom: 1px solid #dddddd;
 }
 
+.popup-box .popup-header .popup-close-icon{
+	position: absolute;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  color: #555555;
+  font-size: 28px;
+  line-height: 30px;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
 .popup-box .popup-body{
 	padding: 15px;
 	max-height: 300px;
 	overflow-y: auto;
 }
 
-.popup-box .popup-end{
-	padding: 15px;
-	border-top: 1px solid #dddddd;
-	text-align: right;
+.popup-box .popup-body p{
+	font-size: 16px;
+  color: #111;
+	margin:0 0 15px;
 }
 
 .popup-box .popup-end .popup-close-btn{
@@ -450,6 +481,16 @@ html{
 	background-color: transparent;
 	cursor: pointer;
 	border-radius: 1px;
+}
+
+.popup-box .popup-end{
+	padding: 15px;
+	border-top:1px solid #dddddd;
+	text-align: right;
+}
+
+.popup-box .popup-end .btn:focus{
+	outline: none;
 }
 
 .popup-box.open{
