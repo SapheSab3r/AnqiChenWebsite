@@ -167,7 +167,6 @@ html{
 }
 
 .about .about-content,
-.skills .skill-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -186,7 +185,7 @@ html{
 .about .about-content .right,
 .skills .skill-content .right,
 .contact .contact-content .right {
-  width: 50%;
+  width: 45%;
   padding-right: 4%;
 }
 
@@ -230,9 +229,10 @@ html{
   height: 35%;
   margin-left: 12%;
   border-radius: 1%;
-  transform: translate(30%);
+  transform: translate(45%);
   box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.4);
 }
+
 
 .about .about-content .right a {
   display: inline-block;
@@ -500,7 +500,7 @@ html{
 
 /* skills section styling */
 .skills {
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .skills .title::after {
@@ -514,27 +514,17 @@ html{
   transform: translateX(-50%);
 }
 
-.skills .right, .left{
-  display: block;
+.skills .left{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transform: translate(12%);
 }
 
-.skills .right{
-  
-  width: 95px;
-  height: 95px;
-  font-size: 16px;
-  margin: 5px 5px 5px 0;
+.skills .column.right{
+  transform: translate(30%);
 }
 
-.skills .skill-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 80%;
-  left: 0;
-  top: 0;
-  background: #f8943f;
-}
 
 .skills .skill-content .skill-heading{
   display: block;
@@ -546,11 +536,6 @@ html{
   font-size: 25px;
 }
 
-
-.skills .skill-content{
-  transform: translate(10%);
-}
-
 .skills .skill-content .flex-item{
   flex: auto;
   display: block;
@@ -558,7 +543,7 @@ html{
 }
 
 .skills .skill-content .flex-item.tool-wrapper{
-  width: 50%;
+  width: 40%;
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
@@ -679,7 +664,7 @@ footer {
 
 footer .to-top {
   color: white;
-  background: #3d2d30;
+  background: #2e2d3d;
   cursor: pointer;
   position: absolute;
   line-height: 43pt;
