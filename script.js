@@ -1,3 +1,5 @@
+// loading page
+
 // slide when small screen
 const navSlide = () => {
     const burger = document.querySelector(".burger");
@@ -92,7 +94,6 @@ const popupCloseIcon = popup.querySelector(".popup-close-icon");
 product.addEventListener("click",function(event){
     if(event.target.tagName.toLowerCase() == "button"){
         const item = event.target.parentElement;
-        console.log(item);
         const h2 = item.querySelector("h2").innerHTML;
         const readMoreCont = item.querySelector(".read-more-cont").innerHTML;
         popup.querySelector("h2").innerHTML = h2;
@@ -113,6 +114,21 @@ popup.addEventListener("click", function(event){
 function popupBox(){
     popup.classList.toggle("open");
 }
+
+//slider
+const track = document.querySelector(".carousel_track");
+const slide = Array.from(track.children);
+const nextButton = document.querySelector(".carousel_button--right");
+const prevButton = document.querySelector(".carousel_button--left")
+
+const slideSize = slide[0].getBoundingClientRect();
+
+
+
+console.log(slideSize);
+//when click left, move to the left
+//when click right, move to the right
+
 
 // scroll Animation
 const fader = document.querySelectorAll(".fade-in");

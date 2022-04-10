@@ -6,6 +6,7 @@
   font-family: "Calibre","Inter","San Francisco","SF Pro Text";
 }
 
+
 .fade-in{
   opacity: 0;
   transition: opacity 250ms ease-in;
@@ -442,25 +443,28 @@ html{
 }
 
 .popup-box .popup-content{
-  background-color: #ffffff;
+  background-color: #5d6aab;
 	width: 700px;
-  height: 600px;
+  height: 640px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+  box-sizing: border-box;
 	border-radius: 2px;
 }
 
 .popup-box .popup-header{
 	padding: 15px 40px 15px 15px;
-	border-bottom: 1px solid #dddddd;
+	border-bottom: 2px solid #E91E63;
 }
 
 .popup-box .popup-header h2{
 	margin:0;
-	color:#E91E63;
-	font-size: 20px;
+	color:#dddddd;
+	font-size: var(--fz-mx);
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .popup-box .popup-header .popup-close-icon{
@@ -468,8 +472,9 @@ html{
   height: 30px;
   width: 30px;
   text-align: center;
-  color: #555555;
+  color: #d5cfcf;
   font-size: 28px;
+  font-weight: 700;
   line-height: 30px;
   right: 5px;
   top: 5px;
@@ -477,21 +482,23 @@ html{
 }
 
 .popup-box .popup-body{
-	padding: 15px;
-	max-height: 90%;
-	overflow-y: auto;
+  position: relative;
+  padding: 15px 15px 10px 10px;
+  max-height: 80%;
+  overflow-y: auto;
 }
 
-.popup-box .popup-body p{
-	font-size: 16px;
-  color: #111;
-	margin:0 0 15px;
+.popup-box .popup-body .carousel_slide .carousel_track{
+  position: absolute;
+	width: 100%;
 }
+
 
 .popup-box .popup-end .popup-close-btn{
+  position: relative;
 	padding: 8px 15px;
-	border:1px solid #555555;
-	color:#555555;
+	border:1px solid #dad8d8;
+	color:#e8e8e8;
 	font-size: 16px;
 	background-color: transparent;
 	cursor: pointer;
@@ -842,5 +849,6 @@ footer span a:hover {
 
 :root{
   --fz-md: 18px;
+  --fz-mx: 22px;
   --ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
 }

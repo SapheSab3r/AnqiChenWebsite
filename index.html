@@ -11,6 +11,11 @@
 </head>
 
 <body>
+<!-- loading page -->
+<div id = "preloader">
+</div>
+
+
 <!--Home Section Start-->
 <section class = "home" id = "home">
     <div class = "navbar">
@@ -100,18 +105,48 @@
                             <br>
                             <br>
                             <div class="read-more-cont">
-                                <p>Video Demo</p>
-                                <video width="320" height="240" controls>
-                                    <source src = "video/plants vs zombies video demo.mp4" type="video/mp4">
-                                </video>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.</p>
+                                <div class = "carousel">
+                                    <button class = "carousel_button--left">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+
+                                    <div class = "carousel_track-container">
+                                        <ul class = "carousel_track">
+                                            <li class = "carousel_slide">
+                                                <video controls>
+                                                    <source src = "video/plants vs zombies video demo.mp4" type="video/mp4">
+                                                </video>
+                                            </li>
+                                            <li class = "carousel_slide">
+                                                <img src = "images/term_project_shot2.png">
+                                            </li>
+                                            <li class = "carousel_slide">
+                                                <img src = "images/term_project_shot3.png">
+                                            </li>    
+                                        </ul>
+
+                                    </div>
+
+                                    <button class = "carousel_button--right">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <div class = "context">
+                                    <p>The game was originally developed by PopCap Games and published by Electronic Arts. I will make a simplified version of that, which will only include a few types of plants, zombies, and two levels (the day level and the night level). 
+                                    Plants vs Zombies is a tower-defending game, where the player's goal is to successfully defeat waves of zombies using the plants that are provided for each level. 
+                                    </p>
+                                
+                                    <p>Normal Level: 
+                                    The player will be provided five types of plants(sunflower, peashooter, walnut and potato mine, kernel pult). The player needs to defend 3 waves of zombies. 
+                                    </p>
+                                    <p>Hard Level: 
+                                    The player will be provided four types of plants(sunflower, peashooter, walnut, and kernel pult). The number of waves increase to 4 waves.
+                                    </p>
+                                </div>
+                                
+                               
                             </div>
+                            
                             <button class = "learn-more" type="button">LEARM MORE</button>
                         </div>
                     </div>
@@ -248,9 +283,11 @@
             <h2></h2>
             <span class="popup-close-icon">&times;</span>
         </div>
+
         <div class = "popup-body">
 
         </div>
+
         <div class = "popup-end">
             <button class = "popup-close-btn">Close</button>
         </div>
