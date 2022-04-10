@@ -443,9 +443,9 @@ html{
 }
 
 .popup-box .popup-content{
-  background-color: #5d6aab;
-	width: 700px;
-  height: 640px;
+  background-color: #8d93b1;
+	width: 90vw;
+  height: 100vh;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -461,10 +461,11 @@ html{
 
 .popup-box .popup-header h2{
 	margin:0;
-	color:#dddddd;
+	color:#ffffff;
 	font-size: var(--fz-mx);
   font-weight: 800;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .popup-box .popup-header .popup-close-icon{
@@ -472,9 +473,9 @@ html{
   height: 30px;
   width: 30px;
   text-align: center;
-  color: #d5cfcf;
-  font-size: 28px;
-  font-weight: 700;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 800;
   line-height: 30px;
   right: 5px;
   top: 5px;
@@ -484,9 +485,12 @@ html{
 .popup-box .popup-body{
   position: relative;
   padding: 15px 15px 10px 10px;
-  max-height: 80%;
-  overflow-y: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+  max-height: 90%;
+  overflow-y:hidden;
 }
+
 
 .popup-box .popup-body .carousel_slide .carousel_track{
   position: absolute;
