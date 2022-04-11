@@ -9,7 +9,7 @@
 
 .fade-in{
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 260ms ease-in;
 }
 
 .fade-in.appear{
@@ -431,8 +431,8 @@ html{
 
 .popup-box{
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -488,13 +488,12 @@ html{
   margin-right: 5%;
   margin-left: 5%;
   max-height: 90%;
-  overflow-y:hidden;
+  overflow-y:auto;
 }
 
+.popup-body .carousel_track-container .carousel_slide video, img{
+  width: 50%;
 
-.popup-box .popup-body .carousel_slide .carousel_track{
-  position: absolute;
-	width: 100%;
 }
 
 
@@ -529,6 +528,7 @@ html{
 /* skills section styling */
 .skills {
   margin-bottom: 10%;
+  width: auto;
 }
 
 .skills .title::after {
@@ -542,21 +542,36 @@ html{
   transform: translateX(-50%);
 }
 
-.skills .left{
+
+.skills .skill-content{
   display: flex;
-  justify-content:space-between;
-  transform: translate(12%);
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
-.skills .right{
-  display: flex;
-  justify-content:space-between;
-  transform: translate(28%);
+.skills .column.left{
+  display: inline-block;
+  width: 48%;
 }
 
+.skills .column.right{
+  width: 50%;
+}
+
+.skills .column.left .flex-item.dev-wrapper ul,
+.des-wrapper ul{
+  display: flex;
+}
+
+.skills .left, .skills .right{
+  margin: 5%;
+  display: inline-block;
+  align-items: center;
+}
 
 .skills .skill-content .skill-heading{
-  display: block;
+  display: inline-block;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
@@ -565,15 +580,7 @@ html{
   font-size: 25px;
 }
 
-.skills .skill-content .flex-item{
-  flex: auto;
-  display: block;
-  padding: 25px;
-}
-
 .skills .skill-content .flex-item.tool-wrapper{
-  width: 40%;
-  display: inline-block;
   vertical-align: top;
   overflow: hidden;
   white-space: nowrap;
@@ -582,7 +589,7 @@ html{
 .skills .skill-content .tool-wrapper .tool-item{
   list-style-type: none;
   margin: 10px 0;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .skills .skill-content .flex-item .dev-item, .design-item{
@@ -591,7 +598,7 @@ html{
   font-size: 16px;
   line-height: 5.5;
   margin: 5px 5px 5px 0;
-  display: inline-block;
+  list-style-type: none;
   border: 3px solid rgba(157, 156, 156, 0.5);
   border-radius: 50%;
   text-align: center;
@@ -808,7 +815,7 @@ footer span a:hover {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 480px) {
   body {
     overflow-x: hidden;
   }
@@ -832,8 +839,97 @@ footer span a:hover {
   .nav-link li {
     opacity: 0;
   }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .home .info .home-content{
+    transform: translateY(-30%);
+  }
+
+  .home .info .text-1{
+    font-size: 20vw;
+  }
+  
+  .about .about-content{
+    display: block;
+  }
+
+  .about .about-content .right .text{
+    font-size: 12px;
+  }
+
+  .work .title{
+    position: relative;
+  }
+
+  .work .title::after, 
+  .about .title::after,
+  .skills .title::after {
+    content: " ";
+    bottom: -18%;
+    width: 100vw;
+    height: 15vw;
+    left: 50%;
+    color: #E91E63;
+    transform: translateX(-50%);
+  }
+  
   .burger {
     display: block;
+  }
+
+  .about .title,
+  .work .title,
+  .skills .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 580;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .about,
+  .contact .contact-content {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+
+  .about .about-content .column{
+    display: block;
+  }
+
+  .about .about-content .right,
+  .skills .skill-contents,
+  .contact .contact-content {
+    text-align: justify;
+  }
+
+  .about .about-content .right .text a{
+    transform: translateX(50%);
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+
+  .about .about-content .column.right,
+  .about .about-content .column.left{
+    display: block;
+    width: 100vw;
+    margin: 25%;
+    margin: 0;
+    font-size: 12px;
+  }
+  .about .about-content .column.left{
+    margin-bottom: 10%;
+    transform: translateX(-5%);
   }
 
   .work .product {
@@ -843,7 +939,32 @@ footer span a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 8px;
     overflow: hidden;
+  }
+
+  .work .work-content .flex.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+
   
+  .skills .skill-content .flex-item{
+    font-size: 12px;
+    padding: 0;
+  }
+  .skills .skill-content .flex-item{
+    display: block;
+    margin-left: 5%;
+    margin-right: 10%;
+    padding: 0;
+  }
+
+  footer .to-top{
+    margin-left: 35%;
+  }
+
+  footer span{
+    margin-left: 0;
   }
 }
 
