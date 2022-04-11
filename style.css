@@ -486,7 +486,7 @@ html{
   position: relative;
   padding: 15px 15px 10px 10px;
   margin-right: 1%;
-  margin-left: %;
+  margin-left: 1%;
   max-height: 90%;
   overflow-y:auto;
 }
