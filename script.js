@@ -137,3 +137,5 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 fader.forEach(fader => {
     appearOnScroll.observe(fader);
 })
+
+//remove hover mode 
