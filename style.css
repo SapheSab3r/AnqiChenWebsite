@@ -458,7 +458,7 @@ html{
 }
 
 .popup-box .popup-content{
-  background-color: #8d93b1;
+  background-color: #272a3e;
 	width: 90vw;
   height: 100vh;
 	position: absolute;
@@ -509,11 +509,14 @@ html{
   font-size: 25px;
   margin-left: 5%;
   margin-right: 5%;
+  font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 .popup-box .popup-body p{
   margin-left: 5%;
   margin-right: 5%;
   line-height: 150%;
+  font-size: 16px;
+  font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 .popup-box .popup-body video{
   margin-top: 2%;
@@ -534,6 +537,7 @@ html{
   margin-bottom: 2%;
   margin-left: 10%;
   margin-right: 5%;
+  font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 .popup-box .popup-body iframe{
   margin-bottom: 2%;
