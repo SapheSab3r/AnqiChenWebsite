@@ -88,7 +88,6 @@ function sendEmail(){
 //popup content
 const product = document.querySelector(".product");
 const popup = document.querySelector(".popup-box");
-const popupCloseBtn = popup.querySelector(".popup-close-btn");
 const popupCloseIcon = popup.querySelector(".popup-close-icon");
 
 product.addEventListener("click",function(event){
@@ -102,7 +101,6 @@ product.addEventListener("click",function(event){
     }
 })
 
-popupCloseBtn.addEventListener("click", popupBox);
 popupCloseIcon.addEventListener("click", popupBox);
 
 popup.addEventListener("click", function(event){
@@ -115,19 +113,6 @@ function popupBox(){
     popup.classList.toggle("open");
 }
 
-//slider
-const track = document.querySelector(".carousel_track");
-const slide = Array.from(track.children);
-const nextButton = document.querySelector(".carousel_button--right");
-const prevButton = document.querySelector(".carousel_button--left")
-
-const slideSize = slide[0].getBoundingClientRect();
-
-
-
-console.log(slideSize);
-//when click left, move to the left
-//when click right, move to the right
 
 
 // scroll Animation
