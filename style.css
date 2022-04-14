@@ -164,6 +164,11 @@ html{
   margin-bottom: 5%;
 }
 
+.about .column.right .text, 
+.about .column.right p{
+  font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
 .about .title,
 .work .title,
 .skills .title {
@@ -188,14 +193,13 @@ html{
 .about .about-content .right .text,
 .work .work-content,
 .contact .contact-content .right .text {
-  padding-left: 4%;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .about .about-content .right,
 .skills .skill-content .right,
 .contact .contact-content .right {
-  width: 45%;
+  width: 50%;
   padding-right: 4%;
 }
 
@@ -230,7 +234,7 @@ html{
 .about .about-content .left,
 .work .work-content .left,
 .contact .contact-content .left {
-  width: 46%;
+  width: 48%;
 }
 
 .about .about-content .left .icon {
