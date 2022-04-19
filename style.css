@@ -462,7 +462,7 @@ html{
 }
 
 .popup-box .popup-content{
-  background-color: #272a3e;
+  background-color: #38406f;
 	width: 90vw;
   height: 100vh;
 	position: absolute;
@@ -505,16 +505,23 @@ html{
   position: relative;
   margin: 5%;
   max-height: 85%;
-  overflow-y:auto;
+  overflow-y: auto;
 }
 
 .popup-box .popup-body h3{
+  margin-top: 4%;
   margin-bottom: 2%;
   font-size: 25px;
   margin-left: 5%;
   margin-right: 5%;
   font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
+
+.popup-box .popup-body li a{
+  color: #eee;
+  text-decoration: underline;
+}
+
 .popup-box .popup-body p{
   margin-left: 5%;
   margin-right: 5%;
@@ -525,13 +532,14 @@ html{
 .popup-box .popup-body video{
   margin-top: 2%;
   margin-bottom: 2%;
+  width: 60vw;
   margin-left: 5%;
   margin-right: 5%;
 }
 .popup-box .popup-body img{
   display: inline-flex;
   justify-content: space-between;
-  width: 35%;
+  width: 65vw;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 5%;
