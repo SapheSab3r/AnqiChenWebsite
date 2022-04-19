@@ -69,6 +69,16 @@ html{
 .home .home-content .text-1 {
   font-size: 80px;
   font-weight: 600;
+  margin: auto;
+}
+.text-1 > .txt{
+  border-right: 3px solid #fffdfe;
+}
+
+.home .home-content .text-below {
+  font-size: 55px;
+  font-weight: 600;
+  opacity: 0.5;
   margin: 4% auto;
 }
 
@@ -80,13 +90,14 @@ html{
   color: #ffe6ef;
 }
 
-.home .home-content .text-2::before{
+.home .home-content .text-below::before{
   content: "";
   height: 1%;
-  width: 100%;
+  width: 50%;
   position: absolute;
   margin: -2%;
   background-color: #ffffff;
+  opacity: 0.9;
 }
 
 /* navbar styling */
@@ -262,6 +273,7 @@ html{
 
 .about .bold-text{
   font-weight: 800;
+  font-size: 20px;
 }
 
 .about .about-content .right a:hover {
@@ -361,7 +373,7 @@ html{
 
 .card .learn-more{
   color: #eee;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   background-color: transparent;
   margin: 5%;
@@ -416,7 +428,7 @@ html{
 
 /* when hover */
 .card:hover img{
-  opacity: 0.25;
+  opacity: 0.15;
 }
 
 .card:hover .text h2,
@@ -937,7 +949,7 @@ footer span a:hover {
   
   .card .learn-more{
     color: #eee;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     background-color: transparent;
     margin: 5%;
@@ -1132,6 +1144,10 @@ footer span a:hover {
 
   .home .info .text-1{
     font-size: 20vw;
+  }
+
+  .home .info .text-below{
+    font-size: 16vw;
   }
   
   .about .about-content{

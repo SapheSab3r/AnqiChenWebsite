@@ -20,7 +20,7 @@
 <!--Home Section Start-->
 <section class = "home" id = "home">
     <div class = "navbar">
-           <div class = "logo"><a href="#">Portfo<span>lio.</a></div>
+           <div class = "logo"><a href="#">An<span>Qi.</a></div>
 <!--nav bar-->
            <ul class="menu">
                <li><a class = "nav-link" href="#about">About Me</a></li>
@@ -40,8 +40,9 @@
     <div class = "info">
         <div class ="home-content">
             <div class = "small-text">Hi, my name is</div>
-            <div class = "text-1">Anqi Chen.</div>
-            <div class = "text-2">If you can't go back, then go farther.</div>
+            <span class = "text-1" data-words = '["Anqi Chen."]' data-wait = "3000"></span>
+            <div class = "text-below">I love building things for the web.</div>
+            <div class = "text-2">"If you can't go back, then go farther."</div>
             <a href="#about" class="button">
                 View My Work
             </a>
@@ -63,14 +64,14 @@
                 <div class = "text">
                     Hello, I'm Anqi (陈安琪).
                     <br><br>
-                    <p><span class = "bold-text">I'm a second year student at Carnegie Mellon University</span>  in Pittsburgh. I enjoy creating things that live on the internet.
+                    <p>I'm a <span class = "bold-text"> student at Carnegie Mellon University</span>  in Pittsburgh. I enjoy creating things that live on the internet.
                         My inerest in web development started back in winter break during my sophomore year when I decided to 
-                    try out building an online portfolio —— turns out it taught me a lot in HTML & CSS! </p>
+                    try out building an online portfolio —— and now, I am immersed in the <span class = "bold-text">wonderful sea of web coding</span>, unable to extricate myself! </p>
                     <br>
                     <p>Thank you for checking my website! This is a collection of projects that I am working on or have worked on.
                         Please feel free to look around!</p>
                     <br>
-                    <p><span class = "bold-text">I'm not in front of a computer screen,</span>  I'm probably hitting the gym, lifting some weights, reading, drawing
+                    <p>I'm<span class = "bold-text"> not in front of a computer screen,</span>  I'm probably hitting the gym, lifting some weights, reading, drawing
                         or playing badminton with my friends.
                     </p>
                     <a href="#work">Learn More</a>
@@ -87,16 +88,19 @@
     <div class = "work-content">
         <div class ="filter-wrap">
             <div class = "flex row">
+                
                 <div class = "filter active" data-filter = "all">ALL</div>
+                <div class = "filter" data-filter = "highlights">HIGHLIGHTS</div>
                 <div class = "filter" data-filter = "python">PYTHON</div>
-                <div class = "filter" data-filter = "arch">ARCHITECTURE</div>
-                <div class = "filter" data-filter = "grass">GRASSHOPPER</div>
                 <div class = "filter" data-filter = "web">WEB DESIGN</div>
+                <div class = "filter" data-filter = "grass">GRASSHOPPER</div>
+                <div class = "filter" data-filter = "arch">ARCHITECTURE</div>
+                
             </div>
 
             <div class = "product">
                 <!-- python project -->
-                <div class = "box python">
+                <div class = "box python highlights">
                     <div class = "card">
                         <img src = "images/term_project_shot1.png">
                         <div class = "text">
@@ -139,7 +143,7 @@
                     </div>
                 </div>
 
-                <div class = "box python">
+                <div class = "box python highlights">
                     <div class = "card">
                         <img src = "images/tetris.png">
                         <div class = "text">
@@ -324,7 +328,7 @@
                 </div>
 
                 <!-- Website Design -->
-                <div class = "box web">
+                <div class = "box web highlights">
                     <div class = "card">
                         <img src = "images/my_website.jpg">
                         <div class = "text">
@@ -488,7 +492,7 @@
                 </div>
 
                 <div class = "container">
-                    <form method = "POST" onsubmit = "sendEmail(); reset(); return false">
+                    <form method = "POST" onsubmit = "sendEmail(); reset();">
                         <h3> Have a question or a project in mind?</h3>
                         <input type = "text" id = "name" placeholder = "Your Name" required>
                         <input type = "email" id = "email" placeholder = "Email ID" required>
