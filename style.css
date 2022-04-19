@@ -518,7 +518,7 @@ html{
 }
 
 .popup-box .popup-body li a{
-  color: #eee;
+  color: rgb(212, 203, 203);
   text-decoration: underline;
 }
 
@@ -528,6 +528,10 @@ html{
   line-height: 150%;
   font-size: 16px;
   font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+.popup-box .popup-body p a{
+  color:rgb(212, 203, 203);
+  text-decoration: underline;
 }
 .popup-box .popup-body video{
   margin-top: 2%;
