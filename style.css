@@ -539,7 +539,7 @@ html{
 }
 
 .popup-box .popup-body li a{
-  color: rgb(253, 253, 253);
+  color: rgb(239, 239, 239);
 }
 
 .popup-box .popup-body p{
@@ -610,14 +610,6 @@ html{
   color: #eee;
   cursor: pointer;
 }
-
-
-.popup-box .popup-end{
-	padding: 15px;
-	border-top: 1px solid #dddddd;
-	text-align: center;
-}
-
 
 .popup-box.open{
   visibility: visible;
