@@ -172,7 +172,10 @@ function popupBox(){
     popup.classList.toggle("open");
 }
 
-
+//scroll to section
+$('#future-plan').click(function(){
+    $(document).scrollTop(100) // any value you need
+    });
 
 // scroll Animation
 const fader = document.querySelectorAll(".fade-in");
