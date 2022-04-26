@@ -529,9 +529,17 @@ html{
   font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 
+.popup-box .popup-body h4{
+  margin-top: 6%;
+  margin-bottom: 2%;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
 .popup-box .popup-body li a{
-  color: rgb(212, 203, 203);
-  text-decoration: underline;
+  color: rgb(253, 253, 253);
 }
 
 .popup-box .popup-body p{
@@ -542,7 +550,7 @@ html{
   font-family: "Segoe UI","Roboto","Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 .popup-box .popup-body p a{
-  color:rgb(212, 203, 203);
+  color:rgb(156, 202, 255);
   text-decoration: underline;
 }
 .popup-box .popup-body video{
