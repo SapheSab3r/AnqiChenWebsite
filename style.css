@@ -574,6 +574,12 @@ html{
   width: 90%;
   height: 100vh;
 }
+.popup-box .popup-body figcaption {
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+}
 
 .popup-box .popup-body button{
   margin-left: 5%;
