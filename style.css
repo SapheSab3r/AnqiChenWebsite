@@ -796,7 +796,7 @@ footer .to-top {
   background: #2e2d3d;
   cursor: pointer;
   position: absolute;
-  line-height: 43pt;
+  line-height: 40pt;
   top: -25px;
   height: 65px;
   width: 65px;
@@ -804,7 +804,7 @@ footer .to-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 47%;
+  margin-left: 45%;
   opacity: 0;
   transition-duration: 0.5s;
   transition-timing-function: ease;
@@ -830,6 +830,7 @@ footer .icon-wrap .icon {
   position: relative;
   padding: 2px;
   margin: 10px;
+  align-items: center;
   transition: transform 0.5s;
 }
 
@@ -853,6 +854,7 @@ footer .icon-wrap .icon:hover .fa-brands {
   animation: to-bottom-from-top 0.5s forwards;
 }
 
+
 @keyframes to-bottom-from-top {
   40% {
     transform: translateY(100%);
@@ -867,7 +869,7 @@ footer .icon-wrap .icon:hover .fa-brands {
 }
 
 footer span {
-  margin-left: 40%;
+  margin-left: 33%;
 }
 
 footer span a {
