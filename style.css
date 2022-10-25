@@ -1093,7 +1093,7 @@ footer span a:hover {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .burger div {
     margin-right: 15px;
   }
